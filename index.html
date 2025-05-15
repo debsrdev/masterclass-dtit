@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="/assets/logo.png" alt="logo">
+        </div>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Films</a></li>
+                    <li>|</li>
+                    <li><a href="tv.html">TV Shows</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="filters-section">
+            <div class="search-box">
+                <input type="text" name="search-input" id="search-input" placeholder="Search movies...">
+            </div>
+            <div class="filters-options">
+                <select name="genre-filter" id="genre-filter">
+                    <option value="All">All Genres</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                </select>
+                <select name="sort-by" id="sort-by">
+                    <option value="default">Sort by</option>
+                    <option value="rating">Rating (High to low)</option>
+                    <option value="year">Year</option>
+                    <option value="title">Title</option>
+                </select>
+            </div>
+        </section>
+        <section class="films-section">
+            <div class="film-list">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; debora rubio</p>
+    </footer>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
